@@ -1,12 +1,35 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/HomeStyles.css"; // Import the CSS file
+import pic1 from "../Pictures/home1.png";
+import pic2 from "../Pictures/home2.png";
+import pic3 from "../Pictures/home3.png";
+import pic4 from "../Pictures/home4.png";
+import pic5 from "../Pictures/home5.png";
+import pic6 from "../Pictures/home6.png";
+import pic7 from "../Pictures/home7.png";
+import pic8 from "../Pictures/home8.png";
 
 const Home = () => {
   const [photoID, setPhotoID] = useState(1);
   const navigate = useNavigate();
 
-  let photoSRC = `./Pictures/home${photoID}.png`;
+  const images = [
+    null,  // Placeholder for index 0
+    pic1,
+    pic2,
+    pic3,
+    pic4,
+    pic5,
+    pic6,
+    pic7,
+    pic8
+  ];
+
+  let choosePhotoID = () => {
+    // Use the photoID as an index to get the corresponding image source
+    return images[photoID];
+  }
   let words = [
     "oop",
     "This is Peter Without Van",
@@ -48,8 +71,10 @@ const Home = () => {
     <div className="container">
       <div className="header">Home Page</div>
 
+      {/* <img src={pic1}/> */}
+
       <div className="image-container">
-        <img src={photoSRC} alt="" className="image" />
+        <img src={choosePhotoID()} alt="" className="image" />
         <div className="caption">{words[photoID]}</div>
       </div>
 

@@ -13,6 +13,7 @@ function App() {
         <Route path="/questions" element={<Questions />} />
         <Route path="/thxpookie" element={<ThxPookie />}/>
         {/* Add more routes as needed */}
+        <Route path="*" element={<Home />} />
       </Routes>
     </Router>
   );

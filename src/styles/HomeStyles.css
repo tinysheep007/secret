@@ -4,13 +4,16 @@
     text-align: center;
     padding: 20px;
     background: url('/public/Pictures/back.png') repeat;
+    background-size: cover;  /* Make the background cover the entire container */
+    background-attachment: fixed; 
+    height: 650px;  /* Ensure the container takes up the full height */
   }
   
   .header {
     font-size: 24px;
     margin-bottom: 20px;
     font-weight: bolder;
-    color: white;
+    color: black;
   }
   
   .image-container {
@@ -26,7 +29,7 @@
     margin-top: 10px;
     font-style: italic;
     font-weight: bolder;
-    color: white;
+    color: black;
   }
   
   .button-container {
