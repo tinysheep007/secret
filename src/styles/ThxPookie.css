@@ -1,0 +1,21 @@
+/* ThxPookie.css */
+
+.thx-pookie-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .image-container {
+    margin-bottom: 20px;
+  }
+  
+  .image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .thanks-message {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  

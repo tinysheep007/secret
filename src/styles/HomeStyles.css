@@ -1,0 +1,41 @@
+/* Home.css */
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background: url('/public/Pictures/back.png') repeat;
+  }
+  
+  .header {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    color: white;
+  }
+  
+  .image-container {
+    margin-bottom: 20px;
+  }
+  
+  .image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .caption {
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: bolder;
+    color: white;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  .button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
